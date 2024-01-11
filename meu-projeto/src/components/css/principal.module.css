@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Dyslexic;
+    src: url(../../../fonts/Open-Dyslexic/OpenDyslexic-Bold.ttf);
+}
+
+.mainFood {
+    display: flex;
+    background-color:#545454 ;
+    height: 600px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 90px;
+}
+
+#mainFoodDescricao {
+    margin: 20px;
+    width: 400px;
+}
+
+#h1Comida {
+    color: white;
+    font-family: Dyslexic;
+    text-align: center;
+}
+
+#pComida {
+    margin: auto;
+    color: white;
+    text-align: left;
+    width: 300px;
+}
+
+#mainFoodImage {
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+}
+
+@media  (max-width: 900px) {
+    #mainFoodImage{
+        width: 200px;
+        height: 200px;
+    }
+}
