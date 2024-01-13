@@ -55,14 +55,16 @@ function BotoesLanches(){
         destacar(id)
     }
 
-    const imagemHamburguer = require('../img/hamburguer.jpg');
+    const imagemHamburguer = require('../img/hamburguer.png')
+    const imagemCoxinha = require('../img/coxinha.png')
+    const imagemPizza = require('../img/pizza.png')
 
     return(
         <div id={styles.divgeral}>
             <nav className={styles.navBotoes}>
-                <input className={styles.botoes} style={{backgroundColor:'#cf881d'}} id='botao01' type="button" value="Lanche 01" onClick={()=>{trocarLanche(1)}}/>
-                <input className={styles.botoes} id='botao02' type="button" value="Lanche 02" onClick={()=>{trocarLanche(2)}}/>
-                <input className={styles.botoes} id='botao03' type="button" value="Lanche 03" onClick={()=>{trocarLanche(3)}}/>
+                <input className={styles.botoes} style={{backgroundColor:'#cf881d'}} id='botao01' type="button" value="Hamburguer" onClick={()=>{trocarLanche(1)}}/>
+                <input className={styles.botoes} id='botao02' type="button" value="Coxinha" onClick={()=>{trocarLanche(2)}}/>
+                <input className={styles.botoes} id='botao03' type="button" value="Pizza" onClick={()=>{trocarLanche(3)}}/>
             </nav>
 
             {lanche01 &&(
@@ -84,7 +86,7 @@ function BotoesLanches(){
                         <p className={styles.descricaoLanche}>Descubra o êxtase do sabor em cada pedaço da nossa coxinha artesanal! <br /><br />Uma crosta dourada e crocante esconde o recheio cremoso de frango desfiado, temperado com ingredientes selecionados. <br /><br />Cada mordida é uma explosão de sabores que despertará seus sentidos. Satisfaça seus desejos com a coxinha perfeita – um deleite irresistível que eleva o prazer gastronômico a outro nível!</p>
                     </div>
 
-                    <div className={styles.imagemLanche} id={styles.imagemLanche02}></div>
+                    <div className={styles.imagemLanche} style={{backgroundImage: `url(${imagemCoxinha})`}} id={styles.imagemLanche02}></div>
                 </section>
             )}
 
@@ -95,7 +97,7 @@ function BotoesLanches(){
                         <p className={styles.descricaoLanche}>Viaje pelos sabores autênticos da Itália com nossa pizza excepcional! <br /><br />Uma massa fina e crocante abraça uma generosa camada de molho de tomate artesanal, coberta com queijo derretido e uma seleção cuidadosa de ingredientes frescos. <br /><br />Cada fatia é uma experiência única, combinando tradição e inovação para satisfazer os paladares mais exigentes. Deleite-se com a perfeição em cada mordida e entregue-se à magia da nossa pizza saborosa!</p>
                     </div>
 
-                    <div className={styles.imagemLanche} id={styles.imagemLanche03}></div>
+                    <div className={styles.imagemLanche} style={{backgroundImage: `url(${imagemPizza})`}} id={styles.imagemLanche03}></div>
                 </section>
             )}
         </div>

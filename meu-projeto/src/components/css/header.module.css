@@ -3,13 +3,33 @@
     src: url(../../../fonts/Adigiana-Toybox-Regular/AdigianaUI.ttf);
 }
 
+@keyframes troca{
+    from{
+        background: url('../../img/background2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    to{
+        background: url('../../img/background1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
 .header {
     position: relative;
-    background-color:#FFBD59 ;
+    background:url('../../img/background2.png') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
     max-width: 100%;
-    height: 550px;
+    height: 580px;
     color: white;
+    animation: troca 30s linear infinite;
 }
 
 #textMain {
@@ -37,5 +57,11 @@
     }
     #pMain{
         font-size: 15px;
+    }
+}
+
+@media (min-width:1300px){
+    .header{
+        height: 680px;
     }
 }
